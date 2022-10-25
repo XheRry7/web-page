@@ -1,0 +1,60 @@
+.container {
+  background-image: url("../../Assets/shutterstock_42474535.jpg");
+  min-height: 376px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+}
+
+.container .text {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Roboto Slab", serif;
+}
+
+.container > div {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+}
+.container > div > input {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 80%;
+  font-style: italic;
+}
+
+.container > div > button {
+  font-size: 18px;
+  background-color: #0074c1;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container .text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .container > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container .text {
+    font-size: 18px;
+  }
+}

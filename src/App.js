@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/header";
+import About from "./components/about/about";
+import Events from "./components/events/events";
+import Footer from "./components/footer/footer";
+import Services from "./components/services/services";
+import Updates from "./components/updates/updates";
+import { useState } from "react";
 
 function App() {
+  const [state, setSate] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header state={state} setState={setSate} />
+      <About />
+      <Events />
+      <Services />
+      <Updates />
+      <Footer />
+    </>
   );
 }
 

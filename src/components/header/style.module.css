@@ -1,0 +1,156 @@
+header > div {
+  padding-left: 0 !important;
+}
+.root {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99999;
+  top: 0;
+  border-bottom: "6px solid #1b3a61";
+}
+.menu {
+  max-width: 71px;
+  background: #3068ad;
+  text-align: center;
+  padding: 13px 10px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  cursor: pointer;
+
+}
+.icon {
+  width: 47px !important;
+  height: 47px !important;
+  font-size: initial !important;
+  margin-top: 10px !important;
+}
+.span {
+  font-size: 12px;
+  position: relative;
+  bottom: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.imageBox {
+  padding: 0;
+  padding-right: 0;
+}
+.roots {
+  margin-left: 20px;
+}
+.title2 {
+  font-size: 26px;
+  color: #225089;
+  font-family: "Roboto Slab", serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.title3 {
+  font-size: 18px;
+  color: gray;
+  font-style: italic;
+}
+
+.btn {
+  padding-right: 60px !important;
+  color: #3068ad !important;
+}
+.search {
+  border: 1px solid #0074c1;
+  cursor: pointer;
+}
+
+.search2 {
+  background-color: #3068ad;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 0;
+  height: 74px;
+  position: absolute;
+  right: 19px;
+  top: 34px;
+  cursor: pointer;
+  width: 42px;
+}
+
+.search svg {
+  color: #0074c1;
+  font-size: 40px;
+  height: 30px;
+  width: 40px;
+  padding-top: 2px;
+}
+
+.search2 svg {
+  color: #fff;
+  font-size: 40px;
+  height: 30px;
+  width: 40px;
+  padding-top: 2px;
+}
+.searchDrop {
+  background-color: #3068ad;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  gap: 20;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+}
+
+.searchDrop input {
+  height: 40px;
+  width: 60%;
+  padding-left: 10px;
+}
+.dropBtn {
+  color: #fff;
+  border: 2px solid white;
+  padding: 12px 20px;
+  position: relative;
+  background-color: #3068ad;
+}
+
+@media only screen and (max-width: 1024px) {
+  .title2 {
+    font-size: 16px;
+  }
+  .title3 {
+    font-size: 14px;
+  }
+  .btn {
+    padding-right: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .btn {
+    display: none !important;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .MuiButton-text {
+    padding-right: 10px !important;
+  }
+  .root {
+    position: unset;
+  }
+ 
+  .searchDrop {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title2,
+  .title3 {
+    display: none;
+  }
+
+}

@@ -1,0 +1,232 @@
+.updateContainer {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.updateContainer > div,
+.updateContainer > div > div {
+  padding: 0;
+}
+
+.updateContainer > div > div {
+  gap: 100px;
+  flex-wrap: nowrap;
+}
+
+.updateContainer > div > div > div > h6 {
+  font-size: 34px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.updateContainer > div > div > div > h6::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 6px;
+  background-color: #8c6910;
+}
+
+.updateContainer > div > div > div > div {
+  margin-bottom: 20px;
+}
+
+.updateContainer > div > div > div > div a {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #0081de;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.updateContainer > div > div > div:first-child > div p:nth-child(2) {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.updateContainer > div > div > div:first-child > div p:nth-child(3) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+}
+
+.updateContainer > div > div > div:first-child > div p:nth-child(4) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #666;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.updateContainer > div > div > div:first-child > div p:nth-child(5) {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: gray;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.updateContainer > div > div > div:last-child > div {
+  display: flex;
+  gap: 25px;
+}
+
+.updateContainer > div > div > div:last-child > div > div:nth-child(1) p {
+  padding: 15px 0px;
+  background: #8c6810;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.updateContainer
+  > div
+  > div
+  > div:last-child
+  > div:nth-child(2)
+  > div:nth-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+
+.updateContainer
+  > div
+  > div
+  > div:last-child
+  > div
+  > div:nth-child(2)
+  span.success {
+  padding: 5px 10px;
+  background: #d2b859;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.updateContainer
+  > div
+  > div
+  > div:last-child
+  > div
+  > div:nth-child(2)
+  span.cancelled {
+  padding: 5px 10px;
+  background-color: #e9261d;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.updateContainer > div > div > div:last-child > div > div:nth-child(2) p.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.updateContainer
+  > div
+  > div
+  > div:last-child
+  > div
+  > div:nth-child(2)
+  p.location,
+.updateContainer > div > div > div:last-child > div > div:nth-child(2) p.time,
+.updateContainer > div > div > div:last-child > div > div:nth-child(2) p.phone {
+  display: flex;
+  margin-bottom: 16px;
+  font-size: 18px;
+  gap: 10px;
+  line-height: 1.2;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  background-color: #0074c1;
+}
+.MuiSvgIcon-root {
+  fill: "#8c6810";
+}
+.btn2 {
+  text-align: right;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+}
+
+.btn2 .icon{
+    padding: 8px;
+    background: lightblue;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.btn3 {
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 0;
+  box-shadow: none;
+  background: #3068ad;
+  margin-top: 30px !important;
+  color: #fff;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .updates {
+    padding-left: 20px;
+  }
+  .updateContainer > div > div > div:last-child > div > div:nth-child(1) p {
+    padding: 15px 6px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .updateContainer {
+    padding: 0 15px;
+    margin-top: 0px;
+  }
+  .updateContainer > div > div {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .updateContainer > div > div > div {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .updateContainer > div > div > div > h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .btn3 {
+    padding: 7px;
+  }
+
+}
